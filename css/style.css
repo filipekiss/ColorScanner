@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+body {
+  font-family: "PT Mono", sans-serif; }
+
+.album {
+  width: 700px;
+  margin: 20px auto; }
+
+.media {
+  padding: 20px; }
+  .media .media-image {
+    float: left;
+    margin-right: 20px; }
+    .media .media-image img {
+      max-width: 300px; }
+  .media .media-body {
+    overflow: hidden; }
+    .media .media-body ol {
+      margin-left: 10px;
+      font-size: 18px; }
