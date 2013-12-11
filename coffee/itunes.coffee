@@ -19,7 +19,7 @@ getCoverColors = (cover)->
         colorInt = rgbToInt r, g, b
         colorData[colorInt] = if colorData[colorInt] then colorData[colorInt] + 1 else 1
         colorTable[colorInt] = [r, g, b] unless colorTable.hasOwnProperty [r, g, b]
-        i = i + 128
+        i = i + 500
     colorData = getTopColors colorData
     topColors = (colorTable[color[0]] for color in colorData by 3)
     # #The second and third colors seems to be always real close one to another, so we remove the third.
