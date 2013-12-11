@@ -94,7 +94,7 @@
     $(".list", albumId).css("color", rgbToHex(albumColors[2]));
   };
 
-  $(document).ready(function() {
+  $('body').load(function() {
     $(".album").each(function() {
       styleAlbumSection($(this).attr("id"));
     });
