@@ -1,6 +1,6 @@
 getCoverColors = (cover)->
     canvas = $("<canvas></canvas>").get 0
-    context = canvas.getContext "2d"
+    ƒtext = canvas.getContext "2d"
     imgW = cover.width()
     imgH = cover.height()
     canvas.width = imgW
