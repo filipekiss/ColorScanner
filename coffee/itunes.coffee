@@ -5,8 +5,9 @@ getCoverColors = (cover)->
     imgH = cover.height()
     canvas.width = imgW
     canvas.height = imgH
-    context.drawImage cover.get(0), 0, 0, imgW, imgH
-    pixels = context.getImageData 0, 0, imgW, imgH
+    image = cover.get(0)
+    context.drawImage(image, 0, 0, imgW, imgH)
+    pixels = context.getImageData(0, 0, imgW, imgH)
     rawColorData = pixels.data
     colorData = {}
     colorTable = {}
@@ -59,7 +60,7 @@ styleAlbumSection = (albumId) ->
     $(".list", albumId).css("color", rgbToHex(albumColors[2]))
     return
 
-jQuery ->
+$(document).ready ->
     $(".album").each ->
         styleAlbumSection $(this).attr "id"
         return
