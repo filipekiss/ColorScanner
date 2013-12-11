@@ -12,7 +12,7 @@ body {
     float: left;
     margin-right: 20px; }
     .media .media-image img {
-      max-width: 300px; }
+      width: 300px; }
   .media .media-body {
     overflow: hidden; }
     .media .media-body ol {

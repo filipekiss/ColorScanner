@@ -27,7 +27,7 @@
       if (!colorTable.hasOwnProperty([r, g, b])) {
         colorTable[colorInt] = [r, g, b];
       }
-      i = i + 128;
+      i = i + 500;
     }
     colorData = getTopColors(colorData);
     topColors = (function() {
