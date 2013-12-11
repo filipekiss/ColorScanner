@@ -4,9 +4,9 @@
     __hasProp = {}.hasOwnProperty;
 
   getCoverColors = function(cover) {
-    var b, canvas, color, colorData, colorInt, colorTable, g, i, image, imgH, imgW, pixels, r, rawColorData, topColors, ƒtext;
+    var b, canvas, color, colorData, colorInt, colorTable, context, g, i, image, imgH, imgW, pixels, r, rawColorData, topColors;
     canvas = $("<canvas></canvas>").get(0);
-    ƒtext = canvas.getContext("2d");
+    context = canvas.getContext("2d");
     imgW = cover.width();
     imgH = cover.height();
     canvas.width = imgW;
