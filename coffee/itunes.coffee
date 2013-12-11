@@ -60,7 +60,7 @@ styleAlbumSection = (albumId) ->
     $(".list", albumId).css("color", rgbToHex(albumColors[2]))
     return
 
-$('body').load ->
+$(window).load ->
     $(".album").each ->
         styleAlbumSection $(this).attr "id"
         return
